@@ -1,7 +1,7 @@
 # google-maps-api-bot
 A middleware application to get locations from the Google Maps Places API in a Helpshift Bot flow The application uses AWS Lambda for hosting. 
-
-![Diagram of API > Middleware > Google Maps Bot Flow](https://helpshift-static-assets.s3-us-west-1.amazonaws.com/GoogleMaps.jpg)
+![Screenshot Google Maps Bot Flow 1](https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-step-1.png =150x150)
+![Screenshot Google Maps Bot Flow 2](https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-step-2.png =150x150)
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
@@ -22,6 +22,14 @@ The AWS Toolkit is an open source plug-in for popular IDEs that uses the SAM CLI
 ## Setting up the API Bot Between Helpshift and Lambda
 
 Helpshift's API bots require Basic Auth for authentication. In my own project I set up a simple Lamba app to use as a API Gateway Authorizer to authenticate users since API gateway's default options are to use AWS auth or none. Please see this [blog post about setting up a Lambda App for basic auth](https://medium.com/@Da_vidgf/http-basic-auth-with-api-gateway-and-serverless-5ae14ad0a270)
+
+![Diagram of API > Middleware > Google Maps Bot Flow](https://helpshift-static-assets.s3-us-west-1.amazonaws.com/GoogleMaps.jpg)
+
+You will need to pass two parameters to the API in the Helpshift Bot Flow. For more information about setting up a Helpshift API Bot see [Helpshift's developer documentation.](https://developers.helpshift.com/custom-bots-api/getting-started/)
+* query: What you want the API to search for. This application uses the [Google Places Text Search Endpoint](https://developers.google.com/places/web-service/search#TextSearchRequests)
+* [googleAPIKey](https://developers.google.com/maps/documentation/javascript/get-api-key)
+
+![Screen shot of Helpshift External API Call](https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-setup.png | width=100)
 
 ## Deploy the sample application
 
