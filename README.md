@@ -29,7 +29,7 @@ You will need to pass two parameters to the API in the Helpshift Bot Flow. For m
 * query: What you want the API to search for. This application uses the [Google Places Text Search Endpoint](https://developers.google.com/places/web-service/search#TextSearchRequests)
 * [googleAPIKey](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
-<img src="https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-setup.png" width="450">
+<img src="https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-setup-2.png" width="450">
 
 ## Deploy the sample application
 
