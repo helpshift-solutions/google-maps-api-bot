@@ -1,8 +1,7 @@
 # google-maps-api-bot
 A middleware application to get locations from the Google Maps Places API in a Helpshift Bot flow The application uses AWS Lambda for hosting. 
 
-<img src="https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-step-1.png" width="200">
-<img src="https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-step-2.png" width="200">
+<img src="https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-step-1.png" width="200">  <img src="https://helpshift-static-assets.s3-us-west-1.amazonaws.com/google-maps-api-step-2.png" width="200">
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
